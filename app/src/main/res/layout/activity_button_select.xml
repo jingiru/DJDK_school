@@ -56,7 +56,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="@drawable/create_group"
-                    android:onClick="moveToCreateGroup" />
+                    android:onClick="moveToGroupCreate" />
 
                 <Button
                     android:id="@+id/search_group"

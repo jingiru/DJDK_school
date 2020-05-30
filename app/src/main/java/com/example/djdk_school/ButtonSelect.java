@@ -23,9 +23,9 @@ public class ButtonSelect extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void moveToCreateGroup(View v)
+    public void moveToGroupCreate(View v)
     {
-        Intent intent = new Intent(this, CreateGroup.class);
+        Intent intent = new Intent(this, GroupCreate.class);
         startActivity(intent);
     }
 

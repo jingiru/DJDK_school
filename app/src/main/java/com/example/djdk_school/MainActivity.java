@@ -37,6 +37,13 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(this, ButtonSelect.class);
             startActivity(intent);
         }
+
+        String name = input_name.getText().toString();
+        Intent name_intent = new Intent(getApplicationContext(), GroupCreate.class);
+
+        name_intent.putExtra("입력한 이름",name);
+
+        startActivity(name_intent);
     }
 
 

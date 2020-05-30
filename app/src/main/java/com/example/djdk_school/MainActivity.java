@@ -26,24 +26,20 @@ public class MainActivity extends AppCompatActivity {
     {
 
         EditText input_name = (EditText) findViewById((R.id.enter_name));
+        String name_string = input_name.getText().toString();
 
-        if(input_name.getText().toString().equals("")){
+        if(name_string.equals("")){
             Toast toast = Toast.makeText(getApplicationContext(),"이름을 입력하세요",Toast.LENGTH_LONG);
             toast.setGravity(Gravity.CENTER,0,25);
             toast.show();
 
         }
         else{
-            Intent intent = new Intent(this, ButtonSelect.class);
+            Intent intent = new Intent(getApplicationContext(), ButtonSelect.class);
+            intent.putExtra("입력한 이름",name_string);
             startActivity(intent);
         }
 
-        String name = input_name.getText().toString();
-        Intent name_intent = new Intent(getApplicationContext(), GroupCreate.class);
-
-        name_intent.putExtra("입력한 이름",name);
-
-        startActivity(name_intent);
     }
 
 

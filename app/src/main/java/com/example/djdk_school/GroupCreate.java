@@ -4,7 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 public class GroupCreate extends AppCompatActivity {
 
@@ -14,12 +17,15 @@ public class GroupCreate extends AppCompatActivity {
         setContentView(R.layout.activity_group_create);
 
         TextView title = (TextView)findViewById(R.id.name_title);
-        Intent intent_title = getIntent();
+        Intent end_title = getIntent();
+        String title_name;
+        title_name = "이끔이: " + end_title.getStringExtra("이름 전달") + ", 모둠원 수: 4명";
+        title.setText(String.valueOf(title_name));
 
-        String name = "이끔이: " + intent_title.getStringExtra("입력한 이름") + ", 모둠원 수: 4명";
+    }
 
-        title.setText(String.valueOf(name));
-
-
+    public void backpress(View v)
+    {
+        onBackPressed();
     }
 }

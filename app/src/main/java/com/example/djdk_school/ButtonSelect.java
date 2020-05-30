@@ -10,6 +10,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.zxing.integration.android.IntentIntegrator;
+
 public class ButtonSelect extends AppCompatActivity {
 
     public String name_trans;
@@ -37,5 +39,6 @@ public class ButtonSelect extends AppCompatActivity {
         intent.putExtra("이름 전달",name_trans);
         startActivity(intent);
     }
+
 
 }

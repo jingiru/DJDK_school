@@ -28,4 +28,9 @@ public class GroupCreate extends AppCompatActivity {
     {
         onBackPressed();
     }
+
+    public void moveToMake(View view) {
+        Intent intent = new Intent(this, make_templet_select.class);
+        startActivity(intent);
+    }
 }

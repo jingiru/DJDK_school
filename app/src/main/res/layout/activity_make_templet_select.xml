@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:orientation="vertical"
+        tools:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@drawable/make_title_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/make_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="100dp"
+                app:srcCompat="@drawable/make_title" />
+
+            <ImageView
+                android:id="@+id/make_title_back"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                app:srcCompat="@drawable/back_white"
+                android:onClick="backpress"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:text=" 템플렛 선택하기" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/tablev00"
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/make_table00" />
+
+        <ImageView
+            android:id="@+id/tavlev01"
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginRight="100dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tablev00"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/make_table01"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/tablev10"
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="100dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tablev00"
+            app:srcCompat="@drawable/make_table10" />
+
+        <ImageView
+            android:id="@+id/tablev11"
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginRight="100dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tablev10"
+            app:layout_constraintTop_toBottomOf="@+id/tavlev01"
+            app:srcCompat="@drawable/make_table11" />
+
+
+        <ImageView
+            android:id="@+id/tablev20"
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="100dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tablev10"
+            app:srcCompat="@drawable/make_table20" />
+
+
+        <ImageView
+            android:id="@+id/tablev21"
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginRight="100dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tablev20"
+            app:layout_constraintTop_toBottomOf="@+id/tablev11"
+            app:srcCompat="@drawable/make_table21" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

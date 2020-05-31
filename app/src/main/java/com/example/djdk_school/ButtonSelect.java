@@ -27,12 +27,6 @@ public class ButtonSelect extends AppCompatActivity {
 
     }
 
-    public void moveToGuidebook(View v)
-    {
-        Intent intent = new Intent(this, Guidebook.class);
-        startActivity(intent);
-    }
-
     public void moveToGroupCreate(View v)
     {
         Intent intent = new Intent(this, GroupCreate.class);
@@ -40,5 +34,16 @@ public class ButtonSelect extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void moveToGuidebook(View v)
+    {
+        Intent intent = new Intent(this, Guidebook.class);
+        startActivity(intent);
+    }
 
+
+
+    public void moveToSettings(View view) {
+        Intent intent = new Intent(this, Settings.class);
+        startActivity(intent);
+    }
 }

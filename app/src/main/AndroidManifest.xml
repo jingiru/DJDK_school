@@ -10,7 +10,9 @@
         android:roundIcon="@drawable/appicon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Group_qr"></activity>
+        <activity android:name=".make_templet_select"></activity>
+        <activity android:name=".Settings" />
+        <activity android:name=".Group_qr" />
         <activity android:name=".GroupCreate" />
         <activity android:name=".Guidebook" />
         <activity android:name=".ButtonSelect" />

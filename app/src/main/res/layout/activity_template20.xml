@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="30">
+
+    <LinearLayout
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/make_title_bg"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/make_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="100dp"
+            android:src="@drawable/make_title" />
+
+        <ImageView
+            android:id="@+id/make_title_back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/back_white"
+            android:onClick="backpress"/>
+    </LinearLayout>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        tools:context=".template00"
+        android:padding="10dp"
+        android:layout_weight="29"
+        >
+
+        <LinearLayout
+            android:id="@+id/Linear_title"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            >
+
+            <EditText
+                android:id="@+id/EditText_title"
+                android:layout_weight="7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:hint="제목"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:background="@drawable/bg_template_title"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/EditText_groupInfo"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="5dp"/>
+
+            <EditText
+                android:id="@+id/EditText_groupInfo"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:hint="모둠이름 \n 모둠원이름 \n 날짜"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:background="@drawable/bg_template_title"
+                app:layout_constraintStart_toEndOf="@id/EditText_title"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="5dp"
+                />
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/EditText_first"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:hint="1"
+            android:textSize="100sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="@drawable/bg_template_box"
+            app:layout_constraintTop_toBottomOf="@id/Linear_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp"
+            />
+
+        <EditText
+            android:id="@+id/EditText_second"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:hint="2"
+            android:textSize="100sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="@drawable/bg_template_box"
+            app:layout_constraintTop_toBottomOf="@id/EditText_first"
+            app:layout_constraintBottom_toTopOf="@id/EditText_five"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/EditText_third"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            />
+
+        <EditText
+            android:id="@+id/EditText_third"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:hint="3"
+            android:textSize="100sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="@drawable/bg_template_box"
+            app:layout_constraintTop_toBottomOf="@id/EditText_first"
+            app:layout_constraintBottom_toTopOf="@id/EditText_five"
+            app:layout_constraintStart_toEndOf="@id/EditText_second"
+            app:layout_constraintEnd_toStartOf="@id/EditText_fourth"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            />
+
+        <EditText
+            android:id="@+id/EditText_fourth"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:hint="4"
+            android:textSize="100sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="@drawable/bg_template_box"
+            app:layout_constraintTop_toBottomOf="@id/EditText_first"
+            app:layout_constraintBottom_toTopOf="@id/EditText_five"
+            app:layout_constraintStart_toEndOf="@id/EditText_third"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            />
+
+
+        <EditText
+            android:id="@+id/EditText_five"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:hint="5"
+            android:textSize="100sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="@drawable/bg_template_box"
+            app:layout_constraintTop_toBottomOf="@id/EditText_second"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</LinearLayout>

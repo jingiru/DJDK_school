@@ -10,17 +10,6 @@
         android:roundIcon="@drawable/appicon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Group_qr_reader"></activity>
-        <activity android:name=".make_templet_select" />
-        <activity android:name=".Settings" />
-        <activity android:name=".Group_qr" />
-        <activity android:name=".GroupCreate" />
-        <activity android:name=".Guidebook" />
-        <activity android:name=".ButtonSelect" />
-
-        <meta-data
-            android:name="com.google.android.actions"
-            android:resource="@drawable/bg_name" />
 
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -29,6 +18,25 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".Group_qr_reader" />
+        <activity android:name=".make_templet_select" />
+        <activity android:name=".Settings" />
+        <activity android:name=".Group_qr" />
+        <activity android:name=".GroupCreate" />
+        <activity android:name=".Guidebook" />
+        <activity android:name=".ButtonSelect" />
+        <activity android:name=".template21" />
+        <activity android:name=".template20" />
+        <activity android:name=".template11" />
+        <activity android:name=".template10" />
+        <activity android:name=".template01" />
+        <activity android:name=".template00" />
+
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@drawable/bg_name" />
+
     </application>
 
 </manifest>

@@ -1,7 +1,5 @@
 package com.example.djdk_school;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -9,11 +7,13 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.common.BitMatrix;
 import com.google.zxing.qrcode.QRCodeWriter;
 
-public class Group_qr_reader extends AppCompatActivity {
+public class code_temp extends AppCompatActivity {
 
     private ImageView ImageView_QR;
     private EditText EditText_input;

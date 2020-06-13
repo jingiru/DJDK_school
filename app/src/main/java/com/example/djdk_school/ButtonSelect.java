@@ -4,13 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.View;
-import android.widget.EditText;
-import android.widget.TextView;
-import android.widget.Toast;
-
-import com.google.zxing.integration.android.IntentIntegrator;
 
 public class ButtonSelect extends AppCompatActivity {
 
@@ -36,7 +30,7 @@ public class ButtonSelect extends AppCompatActivity {
 
     public void moveToQRGenerator(View v)
     {
-        Intent intent = new Intent(this, Group_qr_generator.class);
+        Intent intent = new Intent(this, Group_qr_reader.class);
         startActivity(intent);
     }
 

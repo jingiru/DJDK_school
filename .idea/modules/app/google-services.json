@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "878799666753",
+    "firebase_url": "https://djdkschool.firebaseio.com",
+    "project_id": "djdkschool",
+    "storage_bucket": "djdkschool.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:878799666753:android:77962a25e88833823dd0c0",
+        "android_client_info": {
+          "package_name": "com.example.djdk_school"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "878799666753-crnlgstt0efkthr1b2su6rm0egb2c5pr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.djdk_school",
+            "certificate_hash": "1e170b2434bbd3c6241f5875ed45f5847556e8a1"
+          }
+        },
+        {
+          "client_id": "878799666753-n8rj06n8rkhqir1k16qc3fesp0vo78nb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7MApROPefn2oBTPiP_43ohe8BU-Ef3Bg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "878799666753-n8rj06n8rkhqir1k16qc3fesp0vo78nb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

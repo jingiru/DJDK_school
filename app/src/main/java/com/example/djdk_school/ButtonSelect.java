@@ -34,12 +34,17 @@ public class ButtonSelect extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void moveToQRGenerator(View v)
+    {
+        Intent intent = new Intent(this, Group_qr_generator.class);
+        startActivity(intent);
+    }
+
     public void moveToGuidebook(View v)
     {
         Intent intent = new Intent(this, Guidebook.class);
         startActivity(intent);
     }
-
 
 
     public void moveToSettings(View view) {
